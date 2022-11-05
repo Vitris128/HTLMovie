@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cyber</title>
+
+    <!-- FONT GOOGLE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+
+    <!-- BS4 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- venobox CSS -->
+    <link rel="stylesheet" href="./css/venobox.min.css">
+
+    <!-- Index CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <section class="section header" style="background-color: black;">
+        <!-- HEADER -->
+    <header class="container-md">
+        <p class="text-right text-white mb-0">
+            <i class="fas fa-phone-alt"></i>
+            <span class="mx-3 border-right pr-2">096.105.1014</span>
+            <i class="fa fa-search"></i>
+        </p>
+        <nav class="navbar navbar-expand-md px-0">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="movieNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active line">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">WHAT'S ON</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">SHORTCODES</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header id="headerFixed">
+        <nav class="navbar container navbar-expand-md">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-bars"></i>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="movieNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active line">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">WHAT'S ON</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">SHORTCODES</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    </section>
+    
+    <!-- FAQs -->
+    <div class="section FAQs">
+        <div class="container">
+            <h1 class="text-center is-2">Câu hỏi thường gặp</h1>
+            <div class="">
+                <h3 class="title has-text-warning">1. Xem phim bị chậm?</h3>
+                <p>Nếu phim chạy nhưng cứ một đoạn lại bị dừng để chờ load tiếp (dù đã thử chọn các server khác nhau), cần xác định do thiết bị hay do mạng của bạn.</p>
+                <ul>
+                    <li>Hãy thử xem phim trên một thiết bị khác (máy tính / điện thoại / TV...). Nếu đổi sang thiết bị khác phim lại chạy mượt => do thiết bị cũ của bạn. Nếu đó là TV, hãy kiểm tra thiết lập TV và <i>tắt giao thức kết nối mạng IPv6</i>. Nếu đó là một thiết bị chạy iOS, thì hãy <i>thử dùng một trình duyệt khác</i> (chẳng hạn Chrome) thay vì trình duyệt Safari mặc định, nhưng nói chung player trên iOS rất hay có vấn đề với phim bitrate cao + âm thanh 5.1.</li>
+                    <li>Nếu phim chạy chậm trên tất cả các thiết bị mà bạn thử, với tất cả các server mà trang web cung cấp (bật chế độ VIP mới có), thì đó là do <b>băng thông đường truyền quốc tế</b> mạng của bạn bị bóp (do đường truyền quốc tế bị nghẽn vào giờ cao điểm hoặc đứt cáp...). Có 2 cách giải quyết: 1. Gọi điện phản ánh với nhà mạng; 2. Sử dụng một VPN (mạng riêng ảo) để tăng tốc độ cho mạng của bạn. <b>Chúng tôi đề xuất bạn dùng ứng dụng WARP</b> => <a href="https://1.1.1.1" target="_blank">download tại đây</a>.</li>
+                    <p>Lưu ý: việc bật VPN sẽ làm thay đổi tuyến đường truyền dữ liệu từ máy chủ tới thiết bị của bạn, và không phải cứ bật VPN mạng sẽ nhanh hơn - đôi khi bật VPN sẽ khiến mạng bạn chậm hơn! Cũng giống như có lúc tuyến đường này tắc, giao thông ùn trệ, thì nên đổi sang tuyến đường khác thông thoáng hơn, nhưng lúc khác thì ngược lại!</p>
+                    <ul>
+                        Do đó, lúc nào xem phim bị lag hãy làm như sau để tìm được tuyến đường truyền dữ liệu nhanh nhất:
+                        
+                            <li><b>Tắt</b> VPN rồi thử đổi từng server trên trang web</li>
+                            <li><b>Bật</b> VPN rồi thử đổi từng server trên trang web</li>
+                            ...cho tới khi tìm được sự kết hợp nào giúp xem phim mượt nhất. Và hãy nhớ, sự kết hợp đó chưa chắc đã là tốt nhất mọi lúc. Nên lúc nào bị lag, hãy lặp lại các bước thử trên!
+                        
+                    </ul>
+                </ul>
+                <h3 class="title has-text-warning">2. Gặp vấn đề về âm thanh: phim không có tiếng, mất tiếng nhân vật, hoặc âm thanh bị rè?</h3>
+                <ul>
+                    <li>Nếu xem trên điện thoại: Lỗi âm thanh là do trình duyệt của bạn (thường là Chrome). <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox" target="_blank">Hãy cài & dùng trình duyệt Firefox!</a> </li>
+                    <li>Nếu bạn xem trên PC: Khác với phim / clip trên các web khác (kể cả Youtube), phim trên XemPhim sử dụng âm thanh 5.1 (6 channel) thay vì âm thanh stereo (2 channel). Nếu thiết bị bạn xem chỉ có 2 loa, bạn cần thiết lập chương trình quản lý âm thanh trên thiết bị cho đúng: chọn đúng chế độ với số loa mình có (stereo), đừng chọn nhiều hơn, nếu không thiết bị của bạn sẽ cố gắng xuất âm thanh ra những loa không tồn tại => mất tiếng.
+                        Ví dụ đây là phần chọn các chế độ âm thanh của Realtek HD Audio Manager: <a href="https://imgur.com/a/D6nPGcl" target="_blank"> click vào đây</a></li>
+                </ul>
+                <h3 class="title has-text-warning">3. Làm sao để xem phim trên TV?</h3>
+                Để xem phim trên TV, TV bạn phải có trình duyệt web. Hầu hết các loại Smart TV những năm gần đây đều có cài sẵn trình duyệt. Nếu TV bạn không có sẵn trình duyệt, bạn có thể cài trình duyệt từ cửa hàng ứng dụng (Google Play Store / CH Play / App Store) trên TV. Với TV Android, bạn nên cài trình duyệt Puffin. Sau khi cài trình duyệt, truy cập trang web như bạn vẫn làm trên máy tính / điện thoại và xem phim.
+                <br>
+                <br>
+                Nếu bạn không thể xem phim bằng trình duyệt trên TV, bạn có thể kết nối máy tính với TV (thường qua cổng HDMI) rồi phát từ máy tính lên TV.
+            </div>
+            
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row section">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>GET IN TOUCH</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Give us feedback</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>ABOUT MOVIE STAR</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Find us</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>LEGAL STUFF</h3>
+                    <ul>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <h3>CONNECT WITH US</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i> Google +</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p>2020 © Movie Cyber / Cybersoft</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Thư viện hỗ trợ -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- BS4 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <!-- VENOBOX JS     -->
+    <script src="./js/venobox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+    </script>
+
+    <!-- MAIN JS -->
+    <script>
+
+        window.onscroll = function () {
+            //Code tạo hiệu ứng xuất hiện thanh màu đen khi scroll
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                // translate(-50%,0)
+                document.getElementById("headerFixed").style.transform = "translate(-50%,0)";
+            } else {
+                document.getElementById("headerFixed").style.transform = "translate(-50%,-100%)";
+            }
+        }
+    </script>
+</body>
+
+</html>
