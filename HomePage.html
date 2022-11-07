@@ -30,82 +30,160 @@
 <body>
 
     <!-- HEADER -->
-    <section class="section header" style="background-color: black;">
-        <!-- HEADER -->
-        <header class="container-md">
-            <p class="text-right text-white mb-0">
-                <i class="fas fa-phone-alt"></i>
-                <span class="mx-3 border-right pr-2">096.105.1014</span>
-                <i class="fa fa-search"></i>
-            </p>
-            <nav class="navbar navbar-expand-md px-0">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- <section class="section header" style="background-color: black;"> -->
+    <!-- HEADER -->
+    <header class="container-md">
+        <p class="text-right text-white mb-0">
+            <i class="fas fa-phone-alt"></i>
+            <span class="mx-3 border-right pr-2">070.488.7367</span>
+            <i class="fa fa-search"></i>
+        </p>
+        <nav class="navbar navbar-expand-md px-0">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fa fa-bars"></i>
                 </span>
             </button>
 
-                <div class="collapse navbar-collapse" id="movieNavBar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active line">
-                            <a class="nav-link" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item line">
-                            <a class="nav-link" href="./Schedule.html">SCHEDULE</a>
-                        </li>
-                        <!-- <li class="nav-item line">
+            <div class="collapse navbar-collapse" id="movieNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active line">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="./Schedule.html">SCHEDULE</a>
+                    </li>
+                    <!-- <li class="nav-item line">
                             <a class="nav-link" href="#">SHORTCODES</a>
                         </li> -->
-                        <li class="nav-item line">
-                            <a class="nav-link" href="#">NEWS</a>
-                        </li>
-                        <li class="nav-item line">
-                            <a class="nav-link" href="./contact + new.html">CONTACT</a>
-                        </li>
-                        <li class="nav-item line">
-                            <a class="nav-link" href="./FAQ.html">FAQSs</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <header id="headerFixed">
-            <nav class="navbar container navbar-expand-md">
-                <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="./contact + new.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="./FAQ.html">FAQSs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <header id="headerFixed">
+        <nav class="navbar container navbar-expand-md">
+            <a class="navbar-brand" href="#">
+                <img src="./img/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fa fa-bars"></i>
                 </span>
             </button>
 
-                <div class="collapse navbar-collapse" id="movieNavBar">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active line">
-                            <a class="nav-link" href="./HomePage.html">HOME</a>
-                        </li>
-                        <li class="nav-item line">
-                            <a class="nav-link" href="./Schedule.html">SCHEDULE</a>
-                        </li>
-                        <li class="nav-item line">
-                            <a class="nav-link" href="#">NEWS</a>
-                        </li>
-                        <li class="nav-item line">
-                            <a class="nav-link" href="./contact + new.html">CONTACT</a>
-                        </li>
-                        <li class="nav-item line">
-                            <a class="nav-link" href="./FAQ.html">FAQSs</a>
-                        </li>
-                    </ul>
+            <div class="collapse navbar-collapse" id="movieNavBar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active line">
+                        <a class="nav-link" href="./HomePage.html">HOME</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="./Schedule.html">SCHEDULE</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="#">NEWS</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="./contact + new.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item line">
+                        <a class="nav-link" href="./FAQ.html">FAQSs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- </section> -->
+    <!-- CAROUSEL -->
+    <section class="movieCarousel">
+        <!-- data-ride="carousel" -->
+        <div id="carouselMovie" class="carousel slide carousel-fade">
+            <ol class="container carousel-indicators">
+                <li data-target="#carouselMovie" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselMovie" data-slide-to="1"></li>
+                <li data-target="#carouselMovie" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!-- <img src="./img/hero-1.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="movieCarousel__overlay">
+                    </div>
+                    <div class="container carousel-caption">
+                        <div class="col-12 col-lg-9 p-0">
+                            <p class="animate__animated animate__fadeInDown">ACTION, ADVENTURE, FANTASY</p>
+                            <h2 class="animate__animated animate__fadeInDown">End of the World: Part I</h2>
+                            <p class="animate__animated animate__fadeInUp">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.</p>
+                            <div class="movieCarousel__trailer animate__animated animate__fadeInUp">
+                                <span>PG</span>
+                                <button class="btn">
+                                <span>
+                                    <i class="fa fa-play"></i>
+                                    PLAY TRAILER
+                                </span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </header>
-    </section>
+                <div class="carousel-item">
+                    <!-- <img src="./img/hero-2.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="movieCarousel__overlay">
+                    </div>
+                    <div class="container carousel-caption">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 p-0">
+                            <p class="animate__animated animate__fadeInDown">ACTION, ADVENTURE, FANTASY</p>
+                            <h2 class="animate__animated animate__fadeInDown">End of the World: Part II</h2>
+                            <p class="animate__animated animate__fadeInUp">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.</p>
+                            <div class="movieCarousel__trailer animate__animated animate__fadeInUp">
+                                <span>PG</span>
+                                <button>
+                                <span>
+                                    <i class="fa fa-play"></i>
+                                    PLAY TRAILER
+                                </span>
 
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <!-- <img src="./img/hero-3.jpg" class="d-block w-100" alt="..."> -->
+                    <div class="movieCarousel__overlay">
+                    </div>
+                    <div class="container carousel-caption">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 p-0">
+                            <p class="animate__animated animate__fadeInDown">ACTION, ADVENTURE, FANTASY</p>
+                            <h2 class="animate__animated animate__fadeInDown">End of the World: Part III</h2>
+                            <p class="animate__animated animate__fadeInUp">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamu.</p>
+                            <div class="movieCarousel__trailer animate__animated animate__fadeInUp">
+                                <span>PG</span>
+                                <button>
+                                <span>
+
+                                    <i class="fa fa-play"></i>
+                                    PLAY TRAILER
+                                </span>
+                            </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- NEWIN -->
     <section class="newIn section">
         <div class="container">
