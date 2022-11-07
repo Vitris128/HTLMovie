@@ -141,7 +141,27 @@
         </div>
     </div>
     <section class="section form">
-        1
+        <div class="container">
+            <form onsubmit="return formValidation(this)" name="frm" action="./FAQ.html" method="POST" enctype="multipart/form-data">
+                <h3 class="text-center nav-item active line">Góp ý</h3>
+                <div class="mb-3">
+                    <label for="InputName" class="form-label" >Họ và Tên</label>
+                    <input type="text" name="InputName" class="form-control" id="InputName" required>
+                  </div>
+                <div class="mb-3">
+                    <label for="InputEmail" class="form-label">Địa chỉ Email</label>
+                    <input type="email" name="InputEmail" class="form-control" id="InputEmail" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="InputText" class="form-label">Nội dung</label>
+                    <textarea class="form-control" name="InputText" id="InputText" rows="5" required></textarea>
+                  </div>
+                  
+                  <button type="submit" class="btn btn-primary">Gửi</button>
+            </form>
+        </div>
+            
+    </form>
     </section>
     <!-- FOOTER -->
     <footer>
@@ -213,6 +233,24 @@
             } else {
                 document.getElementById("headerFixed").style.transform = "translate(-50%,-100%)";
             }
+        }
+        // Hàm kiểm tra nội dung nhập vào form
+        function formValidation(frm) {
+            var reg = new RegExp(".{4,}");
+            if(reg.test(frm.InputName.value)==false){
+                if(frm.InputName.value.length<4){
+                alert("Họ và tên phải từ 4 kí tự trở lên.");
+                frm.InputName.focus();
+            return false;
+                }
+            }
+            var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if(emailReg.test(frm.InputEmail.value)==false) {
+                        alert("Email không hợp lệ.");
+                    frm.InputEmail.focus();
+                    return false;
+                }
+            
         }
     </script>
 </body>
