@@ -30,9 +30,6 @@
 <body>
 
     <!-- HEADER -->
-    <!-- <section class="section header" style="background-color: black;"> -->
-    <!-- HEADER -->
-    <!-- <section class="section header" style="background-color: black;"> -->
     <header class="container-md">
         <p class="text-right text-white mb-0">
             <i class="fas fa-phone-alt"></i>
@@ -48,7 +45,6 @@
                     <i class="fa fa-bars"></i>
                 </span>
             </button>
-
             <div class="collapse navbar-collapse" id="movieNavBar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active line">
@@ -57,9 +53,6 @@
                     <li class="nav-item line">
                         <a class="nav-link" href="./Schedule.html">SCHEDULE</a>
                     </li>
-                    <!-- <li class="nav-item line">
-                            <a class="nav-link" href="#">SHORTCODES</a>
-                        </li> -->
                     <li class="nav-item line">
                         <a class="nav-link" href="./News.html">NEWS</a>
                     </li>
@@ -83,7 +76,6 @@
                     <i class="fa fa-bars"></i>
                 </span>
             </button>
-
             <div class="collapse navbar-collapse" id="movieNavBar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active line">
@@ -108,7 +100,7 @@
     <!-- </section> -->
     <!-- CAROUSEL -->
     <section class="movieCarousel">
-        <!-- data-ride="carousel" -->
+        <!-- Slider section -->
         <div id="carouselMovie" class="carousel slide carousel-fade">
             <ol class="container carousel-indicators">
                 <li data-target="#carouselMovie" data-slide-to="0" class="active"></li>
@@ -117,7 +109,6 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <!-- <img src="./img/hero-1.jpg" class="d-block w-100" alt="..."> -->
                     <div class="movieCarousel__overlay">
                     </div>
                     <div class="container carousel-caption">
@@ -138,7 +129,6 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- <img src="./img/hero-2.jpg" class="d-block w-100" alt="..."> -->
                     <div class="movieCarousel__overlay">
                     </div>
                     <div class="container carousel-caption">
@@ -160,7 +150,6 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <!-- <img src="./img/hero-3.jpg" class="d-block w-100" alt="..."> -->
                     <div class="movieCarousel__overlay">
                     </div>
                     <div class="container carousel-caption">
@@ -486,25 +475,11 @@
             </div>
         </div>
     </section>
-    <!-- CONTACT -->
-    <!-- <section class="contact section">
-        <div class="contact__content">
-            <p>Need help? Contact our support team on</p>
-            <p><a href="tel:0961051014">096 105 1014</a></p>
-        </div>
-    </section> -->
-    <!-- FOOTER -->
+   <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row section">
-                <!-- <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <h3>GET IN TOUCH</h3>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Give us feedback</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div> -->
+                
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h3>ABOUT MOVIE STAR</h3>
                     <ul>
@@ -514,15 +489,6 @@
                         <li><a href="#">News</a></li>
                     </ul>
                 </div>
-                <!-- <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <h3>LEGAL STUFF</h3>
-                    <ul>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Cookie policy</a></li>
-
-                    </ul>
-                </div> -->
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h3>CONNECT WITH US</h3>
                     <ul>
@@ -556,7 +522,7 @@
     <!-- MAIN JS -->
     <script>
         window.onscroll = function() {
-            //Code tạo hiệu ứng xuất hiện thanh màu đen khi scroll
+            //Script tạo hiệu ứng xuất hiện thanh màu đen khi scroll
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 // translate(-50%,0)
                 document.getElementById("headerFixed").style.transform = "translate(-50%,0)";
