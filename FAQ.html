@@ -37,14 +37,13 @@
             </p>
             <nav class="navbar navbar-expand-md px-0">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="logo">
+                    <img src="./img/logo-orange.svg" height="120px" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
                     <i class="fa fa-bars"></i>
                 </span>
             </button>
-
                 <div class="collapse navbar-collapse" id="movieNavBar">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item  line">
@@ -69,7 +68,7 @@
         <header id="headerFixed">
             <nav class="navbar container navbar-expand-md">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.svg" alt="logo">
+                    <img src="./img/logo-orange.svg" height="120px" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
@@ -167,14 +166,6 @@
     <footer>
         <div class="container">
             <div class="row section">
-                <!-- <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <h3>GET IN TOUCH</h3>
-                    <ul>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Give us feedback</a></li>
-                        <li><a href="#">Contact us</a></li>
-                    </ul>
-                </div> -->
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h3>ABOUT MOVIE STAR</h3>
                     <ul>
@@ -184,15 +175,6 @@
                         <li><a href="#">News</a></li>
                     </ul>
                 </div>
-                <!-- <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
-                    <h3>LEGAL STUFF</h3>
-                    <ul>
-                        <li><a href="#">Terms & Conditions</a></li>
-                        <li><a href="#">Privacy policy</a></li>
-                        <li><a href="#">Cookie policy</a></li>
-
-                    </ul>
-                </div> -->
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <h3>CONNECT WITH US</h3>
                     <ul>
@@ -225,7 +207,8 @@
 
     <!-- MAIN JS -->
     <script>
-        window.onscroll = function() {
+        window.onscroll = function() { <<
+                << << < HEAD
                 //Code tạo hiệu ứng xuất hiện thanh màu đen khi scroll
                 if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                     // translate(-50%,0)
@@ -233,25 +216,33 @@
                 } else {
                     document.getElementById("headerFixed").style.transform = "translate(-50%,-100%)";
                 }
-            }
-            // Hàm kiểm tra nội dung nhập vào form
-        function formValidation(frm) {
-            var reg = new RegExp(".{4,}");
-            if (reg.test(frm.InputName.value) == false) {
-                if (frm.InputName.value.length < 4) {
-                    alert("Họ và tên phải từ 4 kí tự trở lên.");
-                    frm.InputName.focus();
-                    return false;
+                // =======
+                //Script tạo hiệu ứng xuất hiện thanh màu đen khi scroll
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    // translate(-50%,0)
+                    document.getElementById("headerFixed").style.transform = "translate(-50%,0)";
+                } else {
+                    document.getElementById("headerFixed").style.transform = "translate(-50%,-100%)";
+                    // >>>>>>> f343eeee01e3751d4317a6a7207c585d698f8190
                 }
-            }
-            var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-            if (emailReg.test(frm.InputEmail.value) == false) {
-                alert("Email không hợp lệ.");
-                frm.InputEmail.focus();
-                return false;
-            }
+                // Hàm kiểm tra nội dung nhập vào form
+                function formValidation(frm) {
+                    var reg = new RegExp(".{4,}");
+                    if (reg.test(frm.InputName.value) == false) {
+                        if (frm.InputName.value.length < 4) {
+                            alert("Họ và tên phải từ 4 kí tự trở lên.");
+                            frm.InputName.focus();
+                            return false;
+                        }
+                    }
+                    var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+                    if (emailReg.test(frm.InputEmail.value) == false) {
+                        alert("Email không hợp lệ.");
+                        frm.InputEmail.focus();
+                        return false;
+                    }
 
-        }
+                }
     </script>
 </body>
 
