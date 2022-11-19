@@ -19,9 +19,6 @@
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- venobox CSS -->
-    <link rel="stylesheet" href="./css/venobox.min.css">
-
     <!-- Index CSS -->
     <link rel="stylesheet" href="./css/index.css">
 </head>
@@ -197,52 +194,36 @@
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <!-- VENOBOX JS     -->
-    <script src="./js/venobox.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.venobox').venobox();
-        });
-    </script>
 
     <!-- MAIN JS -->
     <script>
-        window.onscroll = function() { <<
-                << << < HEAD
-                //Code tạo hiệu ứng xuất hiện thanh màu đen khi scroll
-                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                    // translate(-50%,0)
-                    document.getElementById("headerFixed").style.transform = "translate(-50%,0)";
-                } else {
-                    document.getElementById("headerFixed").style.transform = "translate(-50%,-100%)";
-                }
-                // =======
-                //Script tạo hiệu ứng xuất hiện thanh màu đen khi scroll
-                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-                    // translate(-50%,0)
-                    document.getElementById("headerFixed").style.transform = "translate(-50%,0)";
-                } else {
-                    document.getElementById("headerFixed").style.transform = "translate(-50%,-100%)";
-                    // >>>>>>> f343eeee01e3751d4317a6a7207c585d698f8190
-                }
+        window.onscroll = function() {
+            //Script tạo hiệu ứng xuất hiện thanh màu đen khi scroll
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                // translate(-50%,0)
+                document.getElementById("headerFixed").style.transform = "translate(-50%,0)";
+            } else {
+                document.getElementById("headerFixed").style.transform = "translate(-50%,-100%)";
+            }
+        }
                 // Hàm kiểm tra nội dung nhập vào form
-                function formValidation(frm) {
-                    var reg = new RegExp(".{4,}");
-                    if (reg.test(frm.InputName.value) == false) {
-                        if (frm.InputName.value.length < 4) {
-                            alert("Họ và tên phải từ 4 kí tự trở lên.");
-                            frm.InputName.focus();
-                            return false;
-                        }
-                    }
-                    var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-                    if (emailReg.test(frm.InputEmail.value) == false) {
-                        alert("Email không hợp lệ.");
-                        frm.InputEmail.focus();
-                        return false;
-                    }
-
+        function formValidation(frm) {
+            var reg = new RegExp(".{4,}");
+            if (reg.test(frm.InputName.value) == false) {
+                if (frm.InputName.value.length < 4) {
+                    alert("Họ và tên phải từ 4 kí tự trở lên.");
+                    frm.InputName.focus();
+                    return false;
                 }
+            }
+            var emailReg = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            if (emailReg.test(frm.InputEmail.value) == false) {
+                alert("Email không hợp lệ.");
+                frm.InputEmail.focus();
+                return false;
+            }
+
+        }
     </script>
 </body>
 
