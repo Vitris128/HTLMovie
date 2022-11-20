@@ -317,7 +317,7 @@ header p {
 /* transform: skewX(30deg) translateX(-30%); */
 
 .newIn__img:hover .newIn__overlay {
-    transform: skewX(30deg) translateX(-30%);
+    transform: skewX(70deg) translateX(-30%);
 }
 
 .newIn__play {
