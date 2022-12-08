@@ -7,16 +7,3 @@ $(document).ready(function(e) {
         $('.input-group #search_param').val(param);
     });
 });
-
-document.querySelector('#togBtn').addEventListener('input', (event) => {
-    document.querySelector('.title').textContent = data[event.currentTarget.checked ? 'japanese' : 'english'].title;
-  });
-  
-  var data = {
-    "english": {
-      "title": "Hello World"
-    },
-    "japanese": {
-      "title": "ハロー・ワールド"
-    }
-  }
