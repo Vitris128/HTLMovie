@@ -21,22 +21,21 @@
 
     <!-- venobox CSS -->
     <link rel="stylesheet" href="./css/venobox.min.css">
-
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
     <!-- Index CSS -->
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="./img/logo-white.svg" type="image/x-icon">
 </head>
 
 <body>
-
     <!-- HEADER -->
 
     <header class="container-md">
         <p class="text-right text-white mb-0">
-            <i class="fas fa-phone-alt"></i>
-            <!-- Su dung thu vien font awesome tao icon -->
-            <span class="mx-3 border-right pr-2">070.488.7367</span>
-            <i class="fa fa-search"></i>
+            <span id="language"><a href="#" onclick="setLang('vi-VN')"><img src="img/vn.png"><a href="#"
+                onclick="setLang('en-US')"><img src="./img/us.png"></a></span>
         </p>
         <nav class="navbar navbar-expand-md px-0">
             <a class="navbar-brand" href="#">
@@ -50,10 +49,10 @@
             <div class="collapse navbar-collapse" id="movieNavBar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active line">
-                        <a class="nav-link" href="./HomePage.html">HOME</a>
+                        <a class="text-home nav-link " href="./HomePage.html">HOME</a>
                     </li>
                     <li class="nav-item line">
-                        <a class="nav-link" href="./Schedule.html">SCHEDULE</a>
+                        <a class="text-schedule nav-link " href="./Schedule.html">SCHEDULE</a>
                     </li>
                     <li class="nav-item line">
                         <a class="nav-link" href="./News.html">NEWS</a>
@@ -66,6 +65,7 @@
                     </li>
                 </ul>
             </div>
+            
         </nav>
     </header>
     <header id="headerFixed">
@@ -97,6 +97,7 @@
                     </li>
                 </ul>
             </div>
+            
         </nav>
     </header>
     <!-- </section> -->
