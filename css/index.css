@@ -114,6 +114,11 @@ header p {
 }
 
 
+/* sửa logo  */
+#img_logo {
+transform:  translateY(-30px);
+}
+
 /* CAROUSEL */
 
 #carouselMovie .carousel-item .carousel-caption {
@@ -165,6 +170,7 @@ header p {
 }
 
 .movieCarousel__trailer button {
+    text-transform: uppercase;
     padding: 12px 24px;
     border: none;
     border-radius: 30px;
@@ -1007,7 +1013,7 @@ footer a:hover {
 .four_page_fix
 {
     position: absolute;
-    top: -30px;
+    top: -50px;
 }
 
 @media screen and (max-width:767.98px) {
@@ -1019,4 +1025,17 @@ footer a:hover {
     .card {
         margin: 12px 40px;
     }
+}
+
+.language-btn {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.upper
+{
+    text-transform: uppercase;
+}
+.cap 
+{
+    text-transform: capitalize;
 }
