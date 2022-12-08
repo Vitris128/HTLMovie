@@ -871,6 +871,7 @@ footer a:hover {
     .showTimes .nav-tabs .nav-link span {
         padding: 10px 20px;
     }
+    
 }
 
 
@@ -1007,4 +1008,16 @@ footer a:hover {
 {
     position: absolute;
     top: -30px;
+}
+
+
+@media screen and (max-width:767.98px) {
+    /* CONTACT */
+    .contact__content {
+        flex-direction: column;
+        height: 100%;
+    }
+    .card {
+        margin: 12px 40px;
+    }
 }
