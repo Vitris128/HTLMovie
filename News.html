@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Star</title>
+    <title>HTL Movie</title>
 
     <!-- FONT GOOGLE -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -19,12 +19,15 @@
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    
+    <!-- venobox CSS -->
+    <link rel="stylesheet" href="./css/venobox.min.css">
+
+    <!-- Index CSS -->
+        <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    
-    <link rel="stylesheet" href="./contact+new.css">
+    <link rel="shortcut icon" href="./img/logo-white.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -32,9 +35,15 @@
     <!-- HEADER -->
     <section class="section header" style="background-color: black;"></section>
     <header class="container-md">
+        <p class="text-right text-white mb-0">
+            <i class="fas fa-phone-alt"></i>
+            <span class="mx-3 border-right pr-2">070.488.7367</span>
+            <i class="fa fa-search"></i>
+        </p>
         <nav class="navbar navbar-expand-md px-0">
             <a class="navbar-brand" href="#">
-                <img src="./img/logo-orange.svg" height="120px" alt="logo">
+                <img src="./img/logo-orange.svg" height="150px" alt="logo" class="four_page_fix">
+
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
@@ -124,7 +133,7 @@
                     <a href="#">MORE INFO <i class="fa fa-angle-right"></i></a>
                 </div>
                 <div class="col-12 col-sm-6 mt-3 mt-sm-0">
-                    <a data-vbtype="video" href="https://www.youtube.com/watch?v=96TelFMZwHc">
+                    <a class="venobox" data-vbtype="video" href="https://youtu.be/sL3kLxsy-Lg">
                         <div class="comingSoon__video">
                             <img class="img-fluid" src="./img/slide-3-video.png" alt="">
                             <i class="fa fa-play"></i>
@@ -201,7 +210,7 @@
                     <a style="color: yellow;" href="https://www.imdb.com/title/tt1016150/">MORE INFO <i class="fa fa-angle-right"></i></a>
                 </div>
                 <div class="col-12 col-sm-6 mt-3 mt-sm-0">
-                    <a data-vbtype="video" href="https://www.youtube.com/watch?v=hf8EYbVxtCY">
+                    <a class="venobox" data-vbtype="video" href="https://youtu.be/sL3kLxsy-Lg">
                         <div class="comingSoon__video">
                             <img class="img-fluid" src="./img/bg_2.jpg" alt="">
                             <i class="fa fa-play"></i>
@@ -278,7 +287,7 @@
                     <a class="red_text" href="https://www.imdb.com/title/tt5700672/">MORE INFO<i class="fa fa-angle-right"></i></a>
                 </div>
                 <div class="col-12 col-sm-6 mt-3 mt-sm-0">
-                    <a data-vbtype="video" href="https://www.youtube.com/watch?v=pyWuHv2-Abk">
+                    <a class="venobox" data-vbtype="video" href="https://youtu.be/sL3kLxsy-Lg">
                         <div class="comingSoon__video">
                             <img class="img-fluid" src="./img/cms-3-bg.jpg" alt="">
                             <i class="fa fa-play"></i>
@@ -402,8 +411,8 @@
                     <ul>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Find us</a></li>
-                        <li><a href="#">Schedule</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="Schedule.html">Schedule</a></li>
+                        <li><a href="News.html">News</a></li>
                     </ul>
                 </div>
                 <!-- <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
@@ -436,7 +445,15 @@
 
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    
+
+    <!-- VENOBOX JS     -->
+    <script src="./js/venobox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.venobox').venobox();
+        });
+    </script>
+
     <!-- MAIN JS -->
     <script>
         window.onscroll = function() {

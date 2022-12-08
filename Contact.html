@@ -18,11 +18,16 @@
 
     <!-- ANIMATE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    
+
+    <!-- venobox CSS -->
+    <link rel="stylesheet" href="./css/venobox.min.css">
+
     <!-- Index CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <link rel="stylesheet" href="./contact+new.css">
+    <link rel="shortcut icon" href="./img/logo-white.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -30,9 +35,14 @@
     <!-- HEADER -->
     <section class="section header" style="background-color: black;"></section>
     <header class="container-md">
+        <p class="text-right text-white mb-0">
+            <i class="fas fa-phone-alt"></i>
+            <span class="mx-3 border-right pr-2">070.488.7367</span>
+            <i class="fa fa-search"></i>
+        </p>
         <nav class="navbar navbar-expand-md px-0">
             <a class="navbar-brand" href="#">
-                <img src="./img/logo-orange.svg" height="120px" alt="logo">
+                <img src="./img/logo-orange.svg" height="150px" alt="logo" class="four_page_fix">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
@@ -115,10 +125,10 @@
                 <h2>Trần Văn Huy</h2>
                 <p>Member</p>
                 <div class="social">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.facebook.com/HuyTranDevDesCre/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="huyb2111801@student.ctu.edu.vn"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/tsthuy"><i class="fa-brands fa-github"></i></a>
+                    <a href="0869646721"><i class="fa-solid fa-phone"></i></a>
                 </div>
                 <a class="button_a" href="https://www.facebook.com/messages/t/100040321394461">Contact me</a>
             </div>
@@ -131,9 +141,9 @@
                 <p>Member</p>
                 <div class="social">
                     <a href="https://www.facebook.com/LamOppa/"><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-solid fa-phone"></i></a>
+                    <a href="lamb2105548@student.ctu.edu.vn"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/nguyenlam0306"><i class="fa-brands fa-github"></i></a>
+                    <a href="0704887367"><i class="fa-solid fa-phone"></i></a>
                 </div>
                 <a class="button_a" href="https://www.facebook.com/messages/t/100007832742159">Contact me</a>
             </div>
@@ -144,8 +154,8 @@
                 <h2>Lê Nhật Trọng</h2>
                 <p>Member</p>
                 <div class="social">
-                    <a href=""><i class="fa-brands fa-facebook"></i></a>
-                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.facebook.com/n.trong128"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="lenhattrong128@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                     <a href="https://github.com/Vitris128"><i class="fa-brands fa-github"></i></a>
                     <a href=""><i class="fa-solid fa-phone"></i></a>
                 </div>
@@ -172,8 +182,8 @@
                     <ul>
                         <li><a href="#">About us</a></li>
                         <li><a href="#">Find us</a></li>
-                        <li><a href="#">Schedule</a></li>
-                        <li><a href="#">News</a></li>
+                        <li><a href="Schedule.html">Schedule</a></li>
+                        <li><a href="News.html">News</a></li>
                     </ul>
                 </div>
                 <!-- <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
@@ -206,6 +216,14 @@
 
     <!-- BS4 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- VENOBOX JS     -->
+    <script src="./js/venobox.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.venobox').venobox();
+        });
+    </script>
 
     <!-- MAIN JS -->
     <script>
